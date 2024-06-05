@@ -1,0 +1,12 @@
+body {
+    background-color: #388659;
+}
+
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 6em;
+    scale: 2;
+  }

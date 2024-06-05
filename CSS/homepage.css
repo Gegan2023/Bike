@@ -1,0 +1,95 @@
+body {
+    background-color: #388659;
+}
+
+
+h1 {
+    text-decoration: underline;
+    color: #03440C;
+    transition: .25s;
+}
+
+
+h1:hover {
+    transform: scale(1.2);
+    text-decoration: underline rgb(41, 87, 39);
+}
+
+
+.center {
+    text-align: center;
+}
+
+
+h3 {
+    color: #2A2B2E;
+  }
+
+
+  h3 {
+    text-align: center; 
+    position: relative;
+    display: inline-block;
+  }
+ 
+  h3::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(32, 100, 36); 
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+  }
+ 
+  h3:hover::after {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+ 
+  @keyframes underline {
+    0% {
+      transform: scaleX(0);
+      visibility: hidden;
+    }
+    50% {
+      transform: scaleX(1);
+      visibility: visible;
+    }
+    100% {
+      transform: scaleX(0);
+      visibility: hidden;
+    }
+  }
+ 
+  h3.animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255); 
+    animation: underline 2s infinite;
+  }
+
+  .Bike1 {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    transition: opacity 0.5s, transform 0.5s, filter 0.5s;
+    opacity: 0.7;
+  }
+  
+  .Bike1:hover {
+    opacity: 1; 
+    transform: scale(1.1); 
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5)); /* Glow effect */
+  }
+  
+  
+  
+  
