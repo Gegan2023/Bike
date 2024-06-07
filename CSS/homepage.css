@@ -74,7 +74,7 @@ h3 {
     left: 0;
     background-color: rgb(255, 255, 255); 
     animation: underline 2s infinite;
-  }
+  }                             
 
   .Bike1 {
     width: 100px;
@@ -87,9 +87,24 @@ h3 {
   .Bike1:hover {
     opacity: 1; 
     transform: scale(1.1); 
-    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5)); /* Glow effect */
-  }
+    filter: drop-shadow(0 0 10px rgba(208, 235, 204, 0.5)); 
   
-  
-  
-  
+  .hover-underline {
+    text-decoration: none;
+    position: relative; 
+}
+
+.hover-underline::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -2px;
+    height: 2px; 
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+.hover-underline:hover::after {
+    background-color: lightgreen;
+}
