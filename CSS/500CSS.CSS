@@ -11,4 +11,7 @@ body {
     scale: 2;
   }
 
- 
+  .top-link {
+    text-align: center;
+    margin: 2px;
+}
