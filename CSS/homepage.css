@@ -1,11 +1,11 @@
 body {
-    background-color: #388659;
+    background-color: #7a7e7b;
 }
 
 
 h1 {
     text-decoration: underline;
-    color: #03440C;
+    color: #12df2d;
     transition: .25s;
 }
 
@@ -39,7 +39,7 @@ h3 {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: rgb(32, 100, 36); 
+    background-color: rgb(148, 142, 142); 
     visibility: hidden;
     transform: scaleX(0);
     transition: all 0.3s ease-in-out;
